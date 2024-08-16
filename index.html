@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Exotic Petshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #hero {
+            background-color: #333;
+            padding: 50px 0;
+            text-align: center;
+        }
+        #hero h1 {
+            margin: 0;
+            color: #ff5722;
+            font-size: 2.5em;
+        }
+        #hero p {
+            margin: 10px 0 0;
+            color: #ccc;
+            font-size: 1.2em;
+        }
+        #categories, #featured-products {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #e0e0e0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .category-grid, .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .category, .product {
+            background-color: #1f1f1f;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .category img, .product img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .category img:hover, .product img:hover {
+            transform: scale(1.05);
+        }
+        .category h3, .product p {
+            margin: 15px 0;
+            color: #e0e0e0;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="item.html">Products</a></li>
+                <li><a href="info.html">Care Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to Exotic Petshop</h1>
+            <p>Discover the most exotic tarantulas and learn about their care.</p>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <!-- New World -->
+                <div class="category">
+                    <h3>New World</h3>
+                    <a href="item.html">
+                        <img src="images/green_bottle_blue.jpg" alt="Green Bottle Blue">
+                        <p>Green Bottle Blue (Chromatopelma cyaneopubescens)</p>
+                    </a>
+                    <br><br>
+
+                    <a href="item.html">
+                        <img src="images/antilles_pinktoe.jpg" alt="Antilles Pinktoe">
+                        <p>Antilles Pinktoe (Caribena versicolor)</p>
+                    </a>
+                    <br><br>
+                    <a href="item.html">
+                        <img src="images/guatemalan-tiger-rump.jpg" alt="Guatemalan Tiger Rump">
+                        <p>Guatemalan Tiger Rump (Davus pentaloris)</p>
+                    </a>
+                    
+                </div>
+                <!-- Old World -->
+                <div class="category">
+                    <h3>Old World</h3>
+                    <a href="item.html">
+                        <img src="images/socotra_island_blue.jpg" alt="Socotra Island Blue Baboon">
+                        <p>Socotra Island Blue Baboon (Monocentropus balfouri)</p>
+                    </a>
+                    <br><br>
+                    <a href="item.html">
+                        <img src="images/golden_blue_legged_baboon.jpg" alt="Golden Blue Legged Baboon">
+                        <p>Golden Blue Legged Baboon (Harpactira pulchripes)</p>
+                    </a>
+                    <br><br>
+                    <a href="item.html">
+                        <img src="images/orange_baboon_tarantula.jpg" alt="Orange Baboon Tarantula">
+                        <p>Orange Baboon Tarantula (Pterinochilus murinus)</p>
+                    </a>
+                    
+                </div>
+                <!-- Juveniles/Adults -->
+                <div class="category">
+                    <h3>Juveniles/Adults</h3>
+                    <a href="item.html">
+                        <img src="images/venezuelan_suntiger.jpg" alt="Venezuelan Suntiger">
+                        <p>Venezuelan Suntiger (Psalmopoeus irminia)</p>
+                    </a>
+                    <br><br>
+                    <a href="item.html">
+                        <img src="images/pumpkin_patch.jpg" alt="Pumpkin Patch">
+                        <p>Pumpkin Patch (Hapolopus formosus)</p>
+                    </a>
+                    <br><br>
+
+                    <a href="item.html">
+                        <img src="images/grammostola.jpg" alt="Grammostola">
+                        <p>Grammostola (pulchripes/pulchra/rosea)</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="featured-grid">
+                <div class="product">
+                    <a href="item.html">
+                        <img src="images/green_bottle_blue.jpg" alt="Green Bottle Blue">
+                        <p>Green Bottle Blue (Chromatopelma cyaneopubescens)</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="item.html">
+                        <img src="images/antilles_pinktoe.jpg" alt="Antilles Pinktoe">
+                        <p>Antilles Pinktoe (Caribena versicolor)</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="item.html">
+                        <img src="images/socotra_island_blue.jpg" alt="Socotra Island Blue Baboon">
+                        <p>Socotra Island Blue Baboon (Monocentropus balfouri)</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="item.html">
+                        <img src="images/golden_blue_legged_baboon.jpg" alt="Golden Blue Legged Baboon">
+                        <p>Golden Blue Legged Baboon (Harpactira pulchripes)</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Exotic Petshop</p>
+    </footer>
+</body>
+</html>

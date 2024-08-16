@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bottle Blue - Exotic Petshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #product {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-image {
+            max-width: 600px;
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .product-details h1 {
+            color: #ff5722;
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .product-details p {
+            color: #ccc;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-actions {
+            margin-top: 20px;
+        }
+        .product-actions button {
+            background-color: #ff5722;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .product-actions button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="item.html">Products</a></li>
+                <li><a href="info.html">Care Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product">
+            <div class="product-image">
+                <img src="images/green_bottle_blue.jpg" alt="Green Bottle Blue Tarantula">
+            </div>
+            <div class="product-details">
+                <h1>Green Bottle Blue (Chromatopelma cyaneopubescens)</h1>
+                <p>The Green Bottle Blue is a stunning New World tarantula known for its vibrant blue and green coloration. This species is relatively easy to care for and makes a beautiful addition to any tarantula collection.</p>
+                <div class="product-actions">
+                    <button>Add to Cart</button>
+                    <button>Buy Now</button>
+                </div>
+                <a href="info.html" style="color: #ff5722; text-decoration: underline; margin-top: 20px; display: inline-block;">More Detailed Care Guide</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Exotic Petshop</p>
+    </footer>
+</body>
+</html>
